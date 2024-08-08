@@ -3,11 +3,11 @@ import {View, Image, StyleSheet, Platform, TouchableOpacity } from 'react-native
 import { Link } from 'expo-router';
 
 
-export default function HomeScreen() {
+export default function ProfileScreen() {
   
   return (
     <View style={styles.container}>
-    <Link href="/Settings">Settings</Link>
+    <Link href="/Settings">Profile</Link>
 
     </View>
   );
