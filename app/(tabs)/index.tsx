@@ -1,15 +1,16 @@
 import { Navigator } from 'expo-router';
 import {View, Image, StyleSheet, Platform, TouchableOpacity } from 'react-native';
 import { Link } from 'expo-router';
+import { ThemedView } from '@/components/ThemedView';
 
 
 export default function HomeScreen() {
   
   return (
-    <View style={styles.container}>
+    <ThemedView style={styles.container}>
     <Link href="/settings">Home</Link>
 
-    </View>
+    </ThemedView>
   );
 }
 

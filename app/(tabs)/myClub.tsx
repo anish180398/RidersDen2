@@ -1,12 +1,13 @@
 import { StyleSheet, View } from 'react-native';
 import { Link } from 'expo-router';
+import { ThemedView } from '@/components/ThemedView';
 
 export default function TabTwoScreen() {
   return (
-    <View style={styles.container}>
+    <ThemedView style={styles.container}>
     <Link href="/(tabs)/settings">Settings</Link>
 
-    </View>
+    </ThemedView>
   );
 }
 

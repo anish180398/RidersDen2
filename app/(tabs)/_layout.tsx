@@ -10,9 +10,9 @@ export default function TabLayout() {
   return (
     <Tabs
     initialRouteName="index"
-
       screenOptions={{
-        tabBarActiveTintColor: Colors[colorScheme ?? 'dark'].tint,
+        tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
+        tabBarStyle: { backgroundColor: Colors[colorScheme ?? 'light'].background },
         headerShown: false,
       }}
     >
@@ -31,6 +31,15 @@ export default function TabLayout() {
           title: 'My Club',
           tabBarIcon: ({ color, focused }) => (
             <Ionicons name={focused ? 'people' : 'people-outline'} color={color} size={24} />
+          ),
+        }}
+      />
+       <Tabs.Screen
+        name="events"
+        options={{
+          title: 'Events',
+          tabBarIcon: ({ color, focused }) => (
+            <Ionicons name={focused ? 'calendar' : 'calendar-outline'} color={color} size={24}  />
           ),
         }}
       />
