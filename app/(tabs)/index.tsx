@@ -7,7 +7,7 @@ export default function HomeScreen() {
   
   return (
     <View style={styles.container}>
-    <Link href="/Settings">Settings</Link>
+    <Link href="/settings">Home</Link>
 
     </View>
   );
