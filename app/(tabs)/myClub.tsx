@@ -5,7 +5,7 @@ import { ThemedView } from '@/components/ThemedView';
 export default function TabTwoScreen() {
   return (
     <ThemedView style={styles.container}>
-    <Link href="/(tabs)/settings">Settings</Link>
+    {/* <Link href="/(tabs)/settings">Settings</Link> */}
 
     </ThemedView>
   );
