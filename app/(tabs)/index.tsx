@@ -1,19 +1,14 @@
-import { Navigator } from 'expo-router';
-import {SafeAreaView, View, Image, StyleSheet, Platform, TouchableOpacity } from 'react-native';
-import { Link } from 'expo-router';
-import { ThemedView } from '@/components/ThemedView';
-import { ThemedText } from '@/components/ThemedText';
+import { StyleSheet} from 'react-native';
 import Header from '@/components/Header';
 import { ThemedLayout } from '@/components/ThemedLayout';
+import CardSection from '@/components/HomeScreenComponents/CardSection';
 
 
 export default function HomeScreen() {
   return (
     <ThemedLayout>
       <Header/>
-      <ThemedText>
-    <Link href="/settings">Home</Link>
-    </ThemedText>
+    <CardSection/>
     </ThemedLayout>
   );
 }
@@ -21,6 +16,7 @@ export default function HomeScreen() {
 const styles = StyleSheet.create({
   container: {
    flex: 1,
+   width: 100
   },
  
 });
