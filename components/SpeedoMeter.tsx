@@ -2,7 +2,7 @@ import React from "react";
 import { View, Text, StyleSheet } from "react-native";
 import Svg, { Path, Polygon, Circle } from "react-native-svg";
 
-const SemiCircleSpeedometer = ({ progress, size = 200, color = "#3498db" }: any) => {
+const SemiCircleSpeedometer = ({ progress, size = 200, color }: any) => {
   const strokeWidth = 20; // Width of the outer circle
   const radius = (size - strokeWidth) / 2; // Radius of the outer circle
   const angle = progress * (180 / 10); // Angle for the progress value out of 10 (1 to 10)
