@@ -2,7 +2,7 @@ import React from "react";
 import { View, Text, StyleSheet } from "react-native";
 import Svg, { Path, Polygon, Circle } from "react-native-svg";
 
-const SemiCircleSpeedometer = ({ progress, size = 200, color = "#3498db" }) => {
+const SemiCircleSpeedometer = ({ progress, size = 200, color = "#3498db" }: any) => {
   const strokeWidth = 20; // Width of the outer circle
   const radius = (size - strokeWidth) / 2; // Radius of the outer circle
   const angle = progress * (180 / 10); // Angle for the progress value out of 10 (1 to 10)
@@ -41,13 +41,12 @@ const SemiCircleSpeedometer = ({ progress, size = 200, color = "#3498db" }) => {
         />
         {/* Needle */}
         <Polygon
-          points={`${needleTipX},${needleTipY} ${size / 2 - 5},${
+          points={`${needleTipX},${needleTipY} ${size / 2 - 8},${
             size / 2 + 10
           } ${size / 2 + 5},${size / 2 + 10}`}
           fill={color}
         />
-        {/* Needle pivot */}
-        <Circle cx={size / 2} cy={size / 2} r={10} fill={color} />
+      
       </Svg>
     </View>
   );

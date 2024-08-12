@@ -2,7 +2,6 @@ import { StyleSheet, Text, View, FlatList } from 'react-native'
 import React from 'react'
 import { ThemedView } from '../ThemedView'
 import ProfileCard from './cards/profileCard'
-import { ThemedText } from '../ThemedText'
 
 const CardSection = () => {
   return (

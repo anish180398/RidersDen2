@@ -17,7 +17,7 @@ const {width: screenWidth, height: screenHeight } = Dimensions.get('window');
 const styles = StyleSheet.create({
   container: {
     width: screenWidth - 30,  
-    height: screenHeight * 0.25,
+    height: screenHeight * 0.24,
     borderRadius: 15,
     overflow: 'hidden',
     borderWidth: 1,
@@ -37,8 +37,6 @@ const styles = StyleSheet.create({
   },
   content: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
     padding: 20,
   },
 });
